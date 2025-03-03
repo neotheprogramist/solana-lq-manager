@@ -11,11 +11,11 @@ This guide outlines the steps required to import your wallet and manage liquidit
 
 ## Reference Documentation
 
-- **Save Finance (Devnet Addresses):**  
-  [Documentation](https://docs.save.finance/architecture/addresses/devnet)
+- **Save Finance (Mainnet Addresses):**  
+  [Documentation](https://docs.save.finance/architecture/addresses/mainnet/main-pools)
 
-- **Raydium (Developer Addresses):**  
-  [Documentation](https://docs.raydium.io/raydium/protocol/developers/addresses)
+- **Raydium (Mainnet Addresses):**  
+  [Documentation](https://docs.raydium.io/raydium/protocol/developers/addresses#raydium-programs)
 
 ## Wallet Recovery and Import
 
