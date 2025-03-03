@@ -1,7 +1,7 @@
 [env]
 HTTP_URL = "https://api.mainnet-beta.solana.com"
 WS_URL = "wss://api.mainnet-beta.solana.com/"
-PAYER_PATH = "/Users/neo/.config/solana/id.json"
+PAYER_PATH = "~/.config/solana/id.json"
 RAYDIUM_V3_PROGRAM = "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"
 SLIPPAGE = "0.01"
 # USDC

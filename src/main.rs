@@ -1,4 +1,8 @@
-use std::{path::Path, rc::Rc};
+use std::{
+    env,
+    path::{Path, PathBuf},
+    rc::Rc,
+};
 
 use anchor_client::{Client, Cluster};
 use clap::Parser;
@@ -35,8 +39,20 @@ fn main() {
     }
 }
 
+fn expand_home_dir(path: &Path) -> PathBuf {
+    if let Some(str_path) = path.to_str() {
+        if str_path.starts_with('~') {
+            if let Ok(home) = env::var("HOME") {
+                return Path::new(&home).join(str_path.trim_start_matches('~'));
+            }
+        }
+    }
+    path.to_path_buf()
+}
+
 fn read_keypair_file(path: &Path) -> Keypair {
-    let mut file = std::fs::File::open(path).unwrap();
+    let expanded_path = expand_home_dir(path);
+    let mut file = std::fs::File::open(expanded_path).unwrap();
     solana_sdk::signature::read_keypair(&mut file).unwrap()
 }
 
