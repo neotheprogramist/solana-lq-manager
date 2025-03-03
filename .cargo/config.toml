@@ -1,0 +1,13 @@
+[env]
+HTTP_URL = "https://api.mainnet-beta.solana.com"
+WS_URL = "wss://api.mainnet-beta.solana.com/"
+PAYER_PATH = "/Users/neo/.config/solana/id.json"
+RAYDIUM_V3_PROGRAM = "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"
+SLIPPAGE = "0.01"
+# USDC
+MINT0 = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+# USDT
+MINT1 = "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+AMM_CONFIG_INDEX = "4"
+
+SAVE_PROGRAM = "DdZR6zRFiUt4S5mg7AV1uKB2z1f1WzcNYCaTEEWPAuby"
