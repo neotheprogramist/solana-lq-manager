@@ -43,7 +43,7 @@ fn expand_home_dir(path: &Path) -> PathBuf {
     if let Some(str_path) = path.to_str() {
         if str_path.starts_with('~') {
             if let Ok(home) = env::var("HOME") {
-                return Path::new(&home).join(str_path.trim_start_matches('~'));
+                return Path::new(&home).join(str_path.trim_start_matches("~/"));
             }
         }
     }
